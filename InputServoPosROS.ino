@@ -2,7 +2,9 @@
 // mashed with zoomkat 11-22-10 servo (2) test
 // ros2arduino implementation 9-25-2020
 // refactor to Rosserial 10-16-2020
-// Current version 0.04
+// Current version 0.1
+
+#define USE_USBCON
 
 #include <Servo.h> 
 #include <ros.h>
@@ -16,9 +18,9 @@ Servo myservo2;
 int pos1 = 90;    // variable to store the servo position
 int pos2 = 90;
 
-ros::NodeHandle  nh;
+ros::NodeHandle  nh;    //invoke NodeHandle as nh
 
-String readString, servo1, servo2;
+String readString, servo1, servo2;  //invoke strings
 
 void servo_cb( const std_msgs::String& cmd_msg){
   readString = atoi(cmd_msg.data);//set readString
