@@ -2,7 +2,7 @@
 // mashed with zoomkat 11-22-10 servo (2) test
 // ros2arduino implementation 9-25-2020
 // refactor to Rosserial 10-16-2020
-// Current version 0.1 03-11-2022
+// Current version 0.1 03-11-2022* DEP see V.11
 
 #define USE_USBCON
 
